@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduVault — Curiosity. Context. Clarity.</title>
+  <meta name="description" content="EduVault delivers engaging, well-sourced articles on history, science and surprising facts — bite-sized and deep-dive content to spark your curiosity." />
+  <meta name="keywords" content="history, science, facts, education, articles, curiosities" />
+  <meta name="author" content="dannynova" />
+  <link rel="icon" href="assets/favicon.ico" />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:title" content="EduVault — Curiosity. Context. Clarity." />
+  <meta property="og:description" content="Bite-sized facts and thoughtful explainers on history and science. Learn something memorable today." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eduvaulthub.com/" />
+  <meta property="og:image" content="images/og-image.jpg" />
+
+  <!-- Canonical (replace when you have a real domain) -->
+  <link rel="canonical" href="https://eduvaulthub.com/" />
+
+  <style>
+    :root{
+      --accent:#0b79d0; --accent-2:#ff7a59; --bg:#fff; --card:#ffffff;
+      --muted:#6b7280; --text:#0f172a; --max:1120px; --radius:12px;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#fbfdff 0%, #ffffff 100%);color:var(--text);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--max);margin:0 auto;padding:22px}
+    header{backdrop-filter:saturate(120%) blur(6px);position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.85);border-bottom:1px solid #eef3fb}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:46px;height:46px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),#0ea5a4);color:#fff;font-weight:700}
+    h1.site-title{font-size:1.05rem;margin:0;color:var(--text)}
+    nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:.95rem}
+    nav a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:28px 0}
+    .hero-card{display:flex;gap:18px;align-items:center;background:linear-gradient(180deg,#fff,#fcfeff);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(8,20,50,0.06);border:1px solid #eef7ff}
+    .hero-card h2{margin:0;font-size:1.25rem;color:#072338}
+    .hero-card p{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:12px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 4px 14px rgba(8,20,50,0.04);border:1px solid #eef6ff}
+    .card h3{margin:0 0 8px 0;color:#072338}
+    .card p{color:var(--muted);margin:0 0 10px 0}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;font-weight:700;font-size:.8rem}
+    .two-col{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+    aside .card{padding:14px}
+    footer{margin-top:28px;border-top:1px solid #eef3fb;padding:18px 0;color:var(--muted);text-align:center}
+    .meta{color:var(--muted);font-size:.95rem}
+    a.read{color:var(--accent);font-weight:700;text-decoration:none}
+    .fun-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+    .fun-item{background:linear-gradient(180deg,#fff,#f9faff);padding:10px;border-radius:10px;border:1px solid #eef6ff}
+    .subscribe{display:flex;gap:8px;margin-top:12px}
+    input[type="email"]{padding:10px;border-radius:8px;border:1px solid #e6eef8;flex:1}
+    button.cta{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;border:none;cursor:pointer;font-weight:700}
+    @media(min-width:900px){ .hero{grid-template-columns:2fr 1fr} .hero-card{flex-direction:column;align-items:flex-start} }
+  </style>
+
+  <!-- AdSense placeholder: Add your data-ad-client after approval -->
+  <!-- <script data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+</head>
+<body>
+  <header>
+    <div class="wrap header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">EV</div>
+        <div>
+          <h1 class="site-title">EduVault</h1>
+          <div class="meta" style="font-size:.85rem">History • Science • Surprising Facts</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#science">Science</a></li>
+          <li><a href="#fun">Fun Facts</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <section id="home" class="hero" aria-labelledby="welcome-heading">
+      <div class="hero-card">
+        <div>
+          <div class="badge">Daily Curiosity</div>
+          <h2 id="welcome-heading">Stories that stick — short reads and deep dives</h2>
+          <p>Fast facts, memorable narratives, and reliable sources. Perfect for quick learning or a relaxed afternoon read.</p>
+          <div style="margin-top:12px">
+            <a class="read" href="#featured">Explore featured articles →</a>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <strong>Subscribe</strong>
+          <p class="meta">Get one striking fact and one short read in your inbox every week.</p>
+          <form class="subscribe" onsubmit="event.preventDefault(); alert('Thank you for subscribing! To enable real subscriptions, connect this form to a service like Mailchimp, ConvertKit, or Formspree.');">
+            <input type="email" placeholder="you@example.com" required />
+            <button class="cta" type="submit">Subscribe</button>
+          </form>
+          <hr style="margin:12px 0;border:none;border-top:1px solid #eef6ff" />
+          <strong>Watch and learn</strong>
+          <p class="meta">Short video explainers and narrated history bites — new on YouTube.</p>
+          <a class="read" href="https://www.youtube.com/@TechScope-k9i" target="_blank" rel="noopener noreferrer">Visit our YouTube channel →</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="featured" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>The Library That Changed the World</h3>
+          <p class="meta">A story about knowledge, loss, and how ideas travel across time</p>
+          <p>The Library of Alexandria was more than books — it was a network of scholars and ideas. This piece follows one text’s journey and shows why preservation still matters today.</p>
+          <a class="read" href="https://www.khanacademy.org/humanities/world-history">Read full story →</a>
+        </article>
+
+        <article class="card">
+          <h3>One Experiment That Rewrote Physics</h3>
+          <p class="meta">A measurement that changed how scientists think about the universe</p>
+          <p>We explain the experiment, the people behind it, and the simple intuition that makes the result surprising and memorable.</p>
+          <a class="read" href="posts/2025-11-19-science-breakthroughs.html">Read full story →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="history" aria-labelledby="history-heading" style="margin-top:18px">
+      <h2 id="history-heading">History — big arcs, human stories</h2>
+      <div class="two-col" style="margin-top:12px">
+        <div>
+          <div class="card">
+            <h3>Ancient Civilizations Spotlight</h3>
+            <p class="meta">Timelines, maps, and 5 pivotal moments that shaped cities and states</p>
+            <p>Each history article includes a concise timeline, a curated reading list, and a short “Why it matters today” summary to connect past to present.</p>
+            <a class="read" href="#blog">Browse history articles →</a>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h3>Voices from the Past</h3>
+            <p class="meta">Primary sources with plain-language notes</p>
+            <p>Read translated excerpts, letters, and decrees with short annotations explaining the context and modern relevance.</p>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h4>Quick Timeline</h4>
+            <p class="meta">Explore eras at a glance</p>
+            <ul style="padding-left:18px;color:var(--muted)">
+              <li>3500 BCE — Cities and early scripts emerge</li>
+              <li>476 CE — Transformations across Europe and beyond</li>
+              <li>1800–1945 — Industrialization, empires, and global conflicts</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="science" aria-labelledby="science-heading" style="margin-top:18px">
+      <h2 id="science-heading">Science — clear explanations, surprising angles</h2>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <h3>Space: Unexpected Neighbors</h3>
+          <p class="meta">Stories about missions, discoveries, and the people behind them</p>
+          <p>Concise mission recaps and one-sentence takeaways make cosmic discoveries easy to remember.</p>
+        </div>
+
+        <div class="card">
+          <h3>Biology: Life, explained</h3>
+          <p class="meta">From microbes to mammals — concise explainers and practical implications</p>
+          <p>Each science article ends with a short 'In one sentence' takeaway and suggested further reading.</p>
+        </div>
+
+        <div class="card">
+          <h3>Tech & Innovations</h3>
+          <p class="meta">How old ideas meet new tools — ethics and social contexts included</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fun" aria-labelledby="fun-heading" style="margin-top:18px">
+      <h2 id="fun-heading">Fun Facts — quick, shareable, sticky</h2>
+      <div class="fun-list" style="margin-top:8px">
+        <div class="fun-item"><strong>Fact:</strong> Honey never spoils — edible honey has been found in ancient tombs.</div>
+        <div class="fun-item"><strong>Fact:</strong> Octopus arms contain most of their neurons and can act semi-independently.</div>
+        <div class="fun-item"><strong>Fact:</strong> The shortest recorded war lasted under one hour.</div>
+      </div>
+    </section>
+
+    <section id="blog" aria-labelledby="blog-heading" style="margin-top:18px">
+      <h2 id="blog-heading">Blog — long reads and explainers</h2>
+      <article class="card" style="margin-top:12px">
+        <h3>Why Stories Help Us Learn</h3>
+        <p class="meta">Published: 2025-11-19 · Category: Ideas</p>
+        <p>Stories create context, which helps memory. We use short narratives, clear takeaways, and linked sources so readers learn faster and remember longer.</p>
+        <a class="read" href="posts/2025-11-19-featured-dawn-of-civilizations.html">Read →</a>
+      </article>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading" style="margin-top:18px">
+      <h2 id="about-heading">About EduVault — short, clear, cool</h2>
+      <div class="card" style="margin-top:12px">
+        <h3>Our mission</h3>
+        <p>EduVault turns curiosity into understanding. We publish accurate, well-sourced short reads and occasional deep dives that connect history and science to the world you live in.</p>
+
+        <h3 style="margin-top:12px">What makes EduVault different</h3>
+        <ul style="color:var(--muted)">
+          <li><strong>Readable depth</strong> — articles edited for clarity and memorable takeaways</li>
+          <li><strong>Multiformat</strong> — quick facts, visual timelines, and longer explainers</li>
+          <li><strong>Transparent sourcing</strong> — each piece links to primary sources, papers, or reliable summaries</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Join us</h3>
+        <p class="meta">Suggest topics, send corrections, or pitch a story — we read every message and credit contributors.</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading" style="margin-top:18px">
+      <h2 id="contact-heading">Contact & contribute</h2>
+      <div class="card" style="display:grid;grid-template-columns:1fr;gap:10px">
+        <form id="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! To enable real submissions, connect this form to a service like Formspree, Google Forms, or your own server.');">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required /><br><br>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <label style="display:block;margin-top:8px;margin-bottom:6px">Message or idea</label>
+          <textarea required rows="5" style="padding:10px;border-radius:8px;border:1px solid #e6eef8;width:100%"></textarea>
+          <div style="margin-top:10px"><button class="cta" type="submit">Send message</button></div>
+        </form>
+
+        <div style="margin-top:6px;color:var(--muted)">
+          <strong>Editorial inquiries</strong>
+          <p class="meta">Email: <a href="mailto:dannynova32@gmail.com">dannynova32@gmail.com</a></p>
+          <p class="meta">YouTube: <a href="https://www.youtube.com/@TechScope-k9i" target="_blank" rel="noopener noreferrer">youtube.com/@TechScope-k9i</a> — subscribe for short explainers and narrated history bites</p>
+          <p class="meta">Recommended learning: 
+            <a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer">Khan Academy</a>, 
+            <a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">Coursera</a>, 
+            <a href="https://www.edx.org/" target="_blank" rel="noopener noreferrer">edX</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2025 EduVault. Designed for curious minds. All content is original unless credited.</p>
+      <p class="meta">
+        <a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer">Khan Academy</a> ·
+        <a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">Coursera</a> ·
+        <a href="https://www.edx.org/" target="_blank" rel="noopener noreferrer">edX</a>
+      </p>
+      <p class="meta">
+        <a href="https://eduvaulthub.com/privacy.html">Privacy Policy</a> · 
+        <a href="https://eduvaulthub.com/terms.html">Terms</a> · 
+        <a href="https://eduvaulthub.com/rss.xml">RSS</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var id = this.getAttribute('href');
+        var el = document.querySelector(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
